@@ -49,7 +49,7 @@ module.exports = function(options) {
     // The request is outside the scope of this specification.
     const requestOrigin = ctx.get('Origin');
 
-    console.log(ctx.url, requestOrigin);
+    console.log(ctx.url, ctx.method, requestOrigin);
 
     // Always set Vary header
     // https://github.com/rs/cors/issues/10
